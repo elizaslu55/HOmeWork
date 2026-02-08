@@ -1,0 +1,26 @@
+a = input("Введите предложения")
+
+cnt_sentence = 0
+
+cnt_words = 0
+
+if (a == ""):
+    cnt_words = 0
+else:
+    cnt_words = 1
+
+cnt_chars = 0
+
+
+for i in a:
+    if (i == '.' or i == '!' or i == '?'):
+        cnt_sentence = cnt_sentence + 1
+
+    if (i == ' '):
+        cnt_words = cnt_words + 1
+
+    cnt_chars = cnt_chars + 1
+
+print(f"Колличество предложений: {cnt_sentence}")
+print(f"Колличество слов: {cnt_words}")
+print(f"Колличество символов: {cnt_chars}")
